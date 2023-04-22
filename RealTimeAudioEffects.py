@@ -9,9 +9,9 @@ initial_pitch_shift = 0.5
 
 input_device_name = AudioStream.input_device_names[0]
 output_device_name = AudioStream.output_device_names[0]
+print(input_device_name, output_device_name)
 
 with AudioStream(input_device_name, output_device_name, allow_feedback=True) as stream:
-    print("TOP")
     # Set initial delay time
     seconds = initial_delay_seconds
     pitch = initial_pitch_shift
